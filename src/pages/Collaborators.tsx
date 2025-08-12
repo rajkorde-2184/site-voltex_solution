@@ -10,7 +10,7 @@ const Collaborators = () => {
     description: "The Ministry of New and Renewable Energy (MNRE) is the nodal agency in India for all matters related to new and renewable energy sources. "
   }, {
     name: "Make In India",
-    logo: "https://upload.wikimedia.org/wikipedia/en/thumb/4/46/Make_In_India.png/250px-Make_In_India.png",
+    logo: "https://indian-retailer.s3.ap-south-1.amazonaws.com/s3fs-public/2024-03/Initiatives%20Under%20Make%20in%20India%20%20Programmes.png",
     description: "Make in India is an initiative by the Government of India to create and encourage companies to develop, manufacture and assemble products in India and incentivize dedicated investments into manufacturing."
   }];
   return <div className="min-h-screen bg-gradient-to-br from-background via-background to-secondary/5">
