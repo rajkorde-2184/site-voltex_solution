@@ -5,8 +5,8 @@ const Collaborators = () => {
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrU8NwfWK0QXPJ1yN42OpbRM77GEwSa54FbRLdRkYLuwqAml0u55kDew_75McdAyDrDd0&usqp=CAU",
     description: "Leading technology solutions provider"
   }, {
-    name: "Adani Group",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e4/Adani_2012_logo.png/1024px-Adani_2012_logo.png",
+    name: "PM Surya Ghar: Muft Bijli Yojana",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/3/30/MNRE_India.svg",
     description: "Renewable energy specialists"
   }, {
     name: "Smart Systems Ltd",
