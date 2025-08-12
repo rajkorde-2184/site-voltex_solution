@@ -3,15 +3,15 @@ const Collaborators = () => {
   const partners = [{
     name: "GEDA (Gujarat Energy Development Agency)",
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrU8NwfWK0QXPJ1yN42OpbRM77GEwSa54FbRLdRkYLuwqAml0u55kDew_75McdAyDrDd0&usqp=CAU",
-    description: "Leading technology solutions provider"
+    description: "The Gujarat Energy Development Agency (GEDA) is a state-level agency in Gujarat, India, focused on promoting renewable energy and energy efficiency."
   }, {
     name: "PM Surya Ghar: Muft Bijli Yojana",
     logo: "https://www.indianchemicalnews.com/public/thumbs/news/2025/06/26630/MNRE.jpg",
-    description: "Renewable energy specialists"
+    description: "The Ministry of New and Renewable Energy (MNRE) is the nodal agency in India for all matters related to new and renewable energy sources. "
   }, {
     name: "Make In India",
     logo: "https://upload.wikimedia.org/wikipedia/en/thumb/4/46/Make_In_India.png/250px-Make_In_India.png",
-    description: "Intelligent automation solutions"
+    description: "Make in India is an initiative by the Government of India to create and encourage companies to develop, manufacture and assemble products in India and incentivize dedicated investments into manufacturing."
   }];
   return <div className="min-h-screen bg-gradient-to-br from-background via-background to-secondary/5">
       <Navigation />
