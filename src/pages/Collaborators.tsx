@@ -6,24 +6,12 @@ const Collaborators = () => {
     description: "Leading technology solutions provider"
   }, {
     name: "PM Surya Ghar: Muft Bijli Yojana",
-    logo: "https://upload.wikimedia.org/wikipedia/commons/3/30/MNRE_India.svg",
+    logo: "https://www.indianchemicalnews.com/public/thumbs/news/2025/06/26630/MNRE.jpg",
     description: "Renewable energy specialists"
   }, {
-    name: "Smart Systems Ltd",
-    logo: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?w=200&h=100&fit=crop&crop=center",
+    name: "Make In India",
+    logo: "https://upload.wikimedia.org/wikipedia/en/thumb/4/46/Make_In_India.png/250px-Make_In_India.png",
     description: "Intelligent automation solutions"
-  }, {
-    name: "Innovation Partners",
-    logo: "https://images.unsplash.com/photo-1473091534298-04dcbce3278c?w=200&h=100&fit=crop&crop=center",
-    description: "Innovation and development consultancy"
-  }, {
-    name: "Future Tech Co",
-    logo: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=200&h=100&fit=crop&crop=center",
-    description: "Advanced technology solutions"
-  }, {
-    name: "Digital Dynamics",
-    logo: "https://images.unsplash.com/photo-1483058712412-4245e9b90334?w=200&h=100&fit=crop&crop=center",
-    description: "Digital transformation experts"
   }];
   return <div className="min-h-screen bg-gradient-to-br from-background via-background to-secondary/5">
       <Navigation />
