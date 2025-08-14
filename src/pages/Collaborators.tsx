@@ -1,17 +1,23 @@
 import Navigation from "@/components/Navigation";
+import { Link } from "react-router-dom";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog";
+import { useState } from "react";
 const Collaborators = () => {
   const partners = [{
     name: "GEDA (Gujarat Energy Development Agency)",
     logo: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRrU8NwfWK0QXPJ1yN42OpbRM77GEwSa54FbRLdRkYLuwqAml0u55kDew_75McdAyDrDd0&usqp=CAU",
-    description: "The Gujarat Energy Development Agency (GEDA) is a state-level agency in Gujarat, India, focused on promoting renewable energy and energy efficiency."
+    description: "The Gujarat Energy Development Agency (GEDA) is a state-level agency in Gujarat, India, focused on promoting renewable energy and energy efficiency.",
+    fullDescription: "Tech Solutions Inc is a premier technology solutions provider with over 15 years of experience in delivering cutting-edge software development, cloud infrastructure, and digital transformation services. We specialize in enterprise-grade solutions that help businesses optimize their operations and achieve sustainable growth through innovative technology implementations."
   }, {
     name: "PM Surya Ghar: Muft Bijli Yojana",
     logo: "https://www.indianchemicalnews.com/public/thumbs/news/2025/06/26630/MNRE.jpg",
-    description: "The Ministry of New and Renewable Energy (MNRE) is the nodal agency in India for all matters related to new and renewable energy sources. "
+    description: "The Ministry of New and Renewable Energy (MNRE) is the nodal agency in India for all matters related to new and renewable energy sources. ",
+    fullDescription: "Tech Solutions Inc is a premier technology solutions provider with over 15 years of experience in delivering cutting-edge software development, cloud infrastructure, and digital transformation services. We specialize in enterprise-grade solutions that help businesses optimize their operations and achieve sustainable growth through innovative technology implementations."
   }, {
     name: "Make In India",
     logo: "https://indian-retailer.s3.ap-south-1.amazonaws.com/s3fs-public/2024-03/Initiatives%20Under%20Make%20in%20India%20%20Programmes.png",
-    description: "Make in India is an initiative by the Government of India to create and encourage companies to develop, manufacture and assemble products in India and incentivize dedicated investments into manufacturing."
+    description: "Make in India is an initiative by the Government of India to create and encourage companies to develop, manufacture and assemble products in India and incentivize dedicated investments into manufacturing.",
+    fullDescription: "Tech Solutions Inc is a premier technology solutions provider with over 15 years of experience in delivering cutting-edge software development, cloud infrastructure, and digital transformation services. We specialize in enterprise-grade solutions that help businesses optimize their operations and achieve sustainable growth through innovative technology implementations."
   }];
   return <div className="min-h-screen bg-gradient-to-br from-background via-background to-secondary/5">
       <Navigation />
@@ -21,7 +27,7 @@ const Collaborators = () => {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              Our <span className="text-primary">Collaborators</span>
+              Our <span className="text-primary">Partners</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
               We collaborate with industry leaders to deliver exceptional solar energy solutions
@@ -34,19 +40,71 @@ const Collaborators = () => {
       <section className="py-16">
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {partners.map((partner, index) => <div key={index} className="bg-card border border-border rounded-lg p-8 hover:shadow-lg transition-all duration-300 hover:scale-105 group">
+            {partners.map((partner, index) => (
+              <div key={index} className="bg-card border border-border rounded-lg p-8 hover:shadow-lg transition-all duration-300 hover:scale-105 group">
                 <div className="flex flex-col items-center text-center">
-                  <div className="w-48 h-24 mb-6 rounded-lg overflow-hidden bg-muted flex items-center justify-center">
-                    <img src={partner.logo} alt={`${partner.name} logo`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
-                  </div>
-                  <h3 className="text-xl font-semibold text-foreground mb-2">
-                    {partner.name}
-                  </h3>
+                  <Dialog>
+                    <DialogTrigger asChild>
+                      <div className="w-48 h-24 mb-6 rounded-lg overflow-hidden bg-muted flex items-center justify-center cursor-pointer hover:ring-2 hover:ring-primary/50 transition-all duration-200">
+                        <img src={partner.logo} alt={`${partner.name} logo`} className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300" />
+                      </div>
+                    </DialogTrigger>
+                    
+                    <DialogTrigger asChild>
+                      <h3 className="text-xl font-semibold text-foreground mb-2 cursor-pointer hover:text-primary transition-colors duration-200 hover:underline">
+                        {partner.name}
+                      </h3>
+                    </DialogTrigger>
+                    
+                    <DialogContent className="max-w-4xl max-h-[90vh] overflow-y-auto">
+                      <DialogHeader className="space-y-4 pb-6 border-b border-border">
+                        <div className="flex items-center gap-6">
+                          <div className="w-24 h-12 rounded-lg overflow-hidden bg-muted flex items-center justify-center flex-shrink-0">
+                            <img src={partner.logo} alt={`${partner.name} logo`} className="w-full h-full object-cover" />
+                          </div>
+                          <div className="text-left">
+                            <DialogTitle className="text-3xl font-bold text-primary mb-2">{partner.name}</DialogTitle>
+                            <p className="text-lg text-muted-foreground font-medium">{partner.description}</p>
+                          </div>
+                        </div>
+                      </DialogHeader>
+                      
+                      <div className="pt-6 space-y-6">
+                        <div className="w-full h-48 rounded-xl overflow-hidden bg-gradient-to-br from-primary/10 to-secondary/10 flex items-center justify-center shadow-inner">
+                          <img src={partner.logo} alt={`${partner.name} logo`} className="max-w-full max-h-full object-contain" />
+                        </div>
+                        
+                        <div className="prose prose-lg max-w-none">
+                          <h4 className="text-xl font-semibold text-foreground mb-4">About {partner.name}</h4>
+                          <p className="text-muted-foreground leading-relaxed text-base">
+                            {partner.fullDescription}
+                          </p>
+                        </div>
+                        
+                        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 pt-4 border-t border-border">
+                          <div className="bg-primary/5 rounded-lg p-4 text-center">
+                            <h5 className="font-semibold text-primary mb-2">Industry Focus</h5>
+                            <p className="text-sm text-muted-foreground">Technology & Innovation</p>
+                          </div>
+                          <div className="bg-secondary/5 rounded-lg p-4 text-center">
+                            <h5 className="font-semibold text-primary mb-2">Partnership Since</h5>
+                            <p className="text-sm text-muted-foreground">2018</p>
+                          </div>
+                          <div className="bg-accent/5 rounded-lg p-4 text-center">
+                            <h5 className="font-semibold text-primary mb-2">Projects Completed</h5>
+                            <p className="text-sm text-muted-foreground">25+</p>
+                          </div>
+                        </div>
+                      </div>
+                    </DialogContent>
+                  </Dialog>
+                  
                   <p className="text-muted-foreground">
                     {partner.description}
                   </p>
                 </div>
-              </div>)}
+              </div>
+            ))}
           </div>
         </div>
       </section>
@@ -67,18 +125,18 @@ const Collaborators = () => {
             <div>
               <h3 className="text-lg font-semibold text-foreground mb-4">Quick Links</h3>
               <ul className="space-y-2">
-                <li><a href="/" className="text-muted-foreground hover:text-primary">Home</a></li>
-                <li><a href="/#products" className="text-muted-foreground hover:text-primary">Products</a></li>
-                <li><a href="/#benefits" className="text-muted-foreground hover:text-primary">Benefits</a></li>
-                <li><a href="/#contact" className="text-muted-foreground hover:text-primary">Contact</a></li>
+                <li><Link to="/" className="text-muted-foreground hover:text-primary">Home</Link></li>
+                <li><Link to="/#products" className="text-muted-foreground hover:text-primary">Products</Link></li>
+                <li><Link to="/#benefits" className="text-muted-foreground hover:text-primary">Benefits</Link></li>
+                <li><Link to="/#contact" className="text-muted-foreground hover:text-primary">Contact</Link></li>
               </ul>
             </div>
             <div>
               <h3 className="text-lg font-semibold text-foreground mb-4">Contact Info</h3>
               <p className="text-muted-foreground">
-                Email: info.voltexsolution@gmail.com<br />
-                Phone: 9104629229, 9998491595<br />
-                Address: Voltex Solution, shop no 21, Opposite Vinayak Gold palace, in Vasant Vihar 1, Ahmedabad
+               Email: info.voltexsolution@gmail.com<br />
+               Phone: 9104629229, 9998491595<br />
+               Address: Voltex Solution, shop no 21, Opposite Vinayak Gold palace, Vasant Vihar 1, Ahmedabad
               </p>
             </div>
           </div>
