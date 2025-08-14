@@ -136,7 +136,7 @@ const Collaborators = () => {
               <p className="text-muted-foreground">
                Email: info.voltexsolution@gmail.com<br />
                Phone: 9104629229, 9998491595<br />
-               Address: Voltex Solution, shop no 21, Opposite Vinayak Gold palace, Vasant Vihar 1, Ahmedabad
+               <a href= "https://maps.app.goo.gl/vNQ2SjBrxMMajjhH9">Address: Voltex Solution, shop no 21, Opposite Vinayak Gold palace, Vasant Vihar 1, Ahmedabad </a>
               </p>
             </div>
           </div>
