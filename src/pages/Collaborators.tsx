@@ -27,7 +27,7 @@ const Collaborators = () => {
         <div className="container mx-auto px-4">
           <div className="text-center max-w-4xl mx-auto">
             <h1 className="text-4xl md:text-6xl font-bold text-foreground mb-6">
-              Our <span className="text-primary">Partners</span>
+              Our <span className="text-primary">Collaborators</span>
             </h1>
             <p className="text-xl text-muted-foreground mb-8">
               We collaborate with industry leaders to deliver exceptional solar energy solutions
