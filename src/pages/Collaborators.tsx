@@ -136,7 +136,7 @@ const Collaborators = () => {
               <p className="text-muted-foreground">
                Email: info.voltexsolution@gmail.com<br />
                Phone:  <a href="tel:9104629229" className="text-muted-foreground hover: text-primary transition-colors">  9104629229 </a> <br />
-                       <a href="tel:9104629229" className="text-muted-foreground hover: text-primary transition-colors">  9998491595 </a>
+                       <a href="tel:9104629229" className="text-muted-foreground hover: text-primary transition-colors">  9998491595 </a> <br />
                <a href= "https://maps.app.goo.gl/vNQ2SjBrxMMajjhH9">Address: Voltex Solution, shop no 21, Opposite Vinayak Gold palace, Vasant Vihar 1, Ahmedabad </a>
               </p>
             </div>
