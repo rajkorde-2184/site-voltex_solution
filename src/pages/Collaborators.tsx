@@ -12,7 +12,7 @@ const Collaborators = () => {
     name: "PM Surya Ghar: Muft Bijli Yojana",
     logo: "https://www.indianchemicalnews.com/public/thumbs/news/2025/06/26630/MNRE.jpg",
     description: "The Ministry of New and Renewable Energy (MNRE) is the nodal agency in India for all matters related to new and renewable energy sources. ",
-    fullDescription: "Subsidy for Residential Households Rs. 30,000 per kW up to 2 kW, Rs. 18,000 per kW for additional capacity up to 3 kW, Rs. 78,000 Total subsidy for systems larger than 3 kW capped at"
+    fullDescription: "The Pradhan Mantri Surya Ghar – Muft Bijli Yojana, launched in February 2024 by the Government of India, aims to provide up to 300 units of free electricity per month to 1 crore households through rooftop solar installations. Implemented by the Ministry of New and Renewable Energy, the scheme offers up to 60% subsidy for systems up to 2 kW and 40% for the additional capacity up to 3 kW (capped at ₹78,000), along with collateral-free loans at low interest rates. Households can apply via the national portal (pmsuryaghar.gov.in), get installation from registered vendors, and benefit from lower electricity bills, potential income from selling surplus power, and reduced carbon emissions, while boosting domestic solar manufacturing and green jobs."
   }, {
     name: "Make In India",
     logo: "https://indian-retailer.s3.ap-south-1.amazonaws.com/s3fs-public/2024-03/Initiatives%20Under%20Make%20in%20India%20%20Programmes.png",
