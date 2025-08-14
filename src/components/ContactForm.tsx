@@ -105,7 +105,7 @@ const ContactForm = () => {
                   </div>
                   <div>
                     <p className="font-medium">Visit Us</p>
-                    <p className="text-muted-foreground"> Voltex Solution, shop no 21, Opposite Vinayak Gold palace, in Vasant Vihar 1, Ahmedabad</p>
+                    <p className="text-muted-foreground"> Voltex Solution, shop no 21, Opposite Vinayak Gold palace, Vasant Vihar 1, Ahmedabad</p>
                   </div>
                 </div>
               </div>
